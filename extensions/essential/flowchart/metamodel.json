@@ -1,0 +1,320 @@
+{
+  "FCModelElement": {
+    "kind": "class",
+    "super": "ExtensibleModel"
+  },
+  "FCFlowchart": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "ordering": 1100
+  },
+  "FCFlowchartDiagram": {
+    "kind": "class",
+    "super": "Diagram"
+  },
+  "FCProcess": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCProcessView",
+    "ordering": 1200
+  },
+  "FCTerminator": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCTerminatorView",
+    "ordering": 1201
+  },
+  "FCDecision": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCDecisionView",
+    "ordering": 1202
+  },
+  "FCDelay": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCDelayView",
+    "ordering": 1203
+  },
+  "FCPredefinedProcess": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCPredefinedProcessView",
+    "ordering": 1204
+  },
+  "FCAlternateProcess": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCAlternateProcessView",
+    "ordering": 1205
+  },
+  "FCData": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCDataView",
+    "ordering": 1206
+  },
+  "FCDocument": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCDocumentView",
+    "ordering": 1207
+  },
+  "FCMultiDocument": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCMultiDocumentView",
+    "ordering": 1208
+  },
+  "FCPreparation": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCPreparationView",
+    "ordering": 1209
+  },
+  "FCDisplay": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCDisplayView",
+    "ordering": 1210
+  },
+  "FCManualInput": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCManualInputView",
+    "ordering": 1211
+  },
+  "FCManualOperation": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCManualOperationView",
+    "ordering": 1212
+  },
+  "FCCard": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCCardView",
+    "ordering": 1213
+  },
+  "FCPunchedTape": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCPunchedTapeView",
+    "ordering": 1214
+  },
+  "FCConnector": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCConnectorView",
+    "ordering": 1215
+  },
+  "FCOffPageConnector": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCOffPageConnectorView",
+    "ordering": 1216
+  },
+  "FCOr": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCOrView",
+    "ordering": 1217
+  },
+  "FCSummingJunction": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCSummingJunctionView",
+    "ordering": 1218
+  },
+  "FCCollate": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCCollateView",
+    "ordering": 1219
+  },
+  "FCSort": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCSortView",
+    "ordering": 1220
+  },
+  "FCMerge": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCMergeView",
+    "ordering": 1221
+  },
+  "FCExtract": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCExtractView",
+    "ordering": 1222
+  },
+  "FCStoredData": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCStoredDataView",
+    "ordering": 1223
+  },
+  "FCDatabase": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCDatabaseView",
+    "ordering": 1224
+  },
+  "FCDirectAccessStorage": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCDirectAccessStorageView",
+    "ordering": 1225
+  },
+  "FCInternalStorage": {
+    "kind": "class",
+    "super": "FCModelElement",
+    "view": "FCInternalStorageView",
+    "ordering": 1226
+  },
+  "FCFlow": {
+    "kind": "class",
+    "super": "DirectedRelationship",
+    "view": "FCFlowView",
+    "ordering": 1227
+  },
+  "FCGeneralNodeView": {
+    "kind": "class",
+    "super": "NodeView",
+    "attributes": [
+      {
+        "name": "nameLabel",
+        "kind": "ref",
+        "type": "LabelView",
+        "embedded": "subViews"
+      },
+      { "name": "wordWrap", "kind": "prim", "type": "Boolean", "default": true }
+    ]
+  },
+  "FCGeneralEdgeView": {
+    "kind": "class",
+    "super": "EdgeView",
+    "attributes": [
+      {
+        "name": "nameLabel",
+        "kind": "ref",
+        "type": "EdgeLabelView",
+        "embedded": "subViews"
+      }
+    ]
+  },
+  "FCProcessView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCTerminatorView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCDecisionView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCDelayView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCPredefinedProcessView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCAlternateProcessView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCDataView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCDocumentView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCMultiDocumentView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCPreparationView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCDisplayView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCManualInputView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCManualOperationView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCCardView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCPunchedTapeView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCConnectorView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCOffPageConnectorView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCOrView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCSummingJunctionView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCCollateView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCSortView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCMergeView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCExtractView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCStoredDataView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCDatabaseView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCDirectAccessStorageView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCInternalStorageView": {
+    "kind": "class",
+    "super": "FCGeneralNodeView"
+  },
+  "FCFlowView": {
+    "kind": "class",
+    "super": "FCGeneralEdgeView"
+  }
+}

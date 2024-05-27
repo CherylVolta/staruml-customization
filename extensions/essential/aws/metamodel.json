@@ -1,0 +1,174 @@
+{
+  "AWSElement": {
+    "kind": "class",
+    "super": "ExtensibleModel",
+    "attributes": [
+      {
+        "name": "icon",
+        "kind": "prim",
+        "type": "String",
+        "visible": false,
+        "default": ""
+      }
+    ]
+  },
+  "AWSModel": {
+    "kind": "class",
+    "super": "AWSElement",
+    "ordering": 1100
+  },
+  "AWSDiagram": {
+    "kind": "class",
+    "super": "Diagram",
+    "views": [
+      "UMLCustomTextView",
+      "ShapeView",
+      "UMLNoteLinkView",
+      "AWSGroupView",
+      "AWSGenericGroupView",
+      "AWSAvailabilityZoneView",
+      "AWSSecurityGroupView",
+      "AWSServiceView",
+      "AWSResourceView",
+      "AWSGeneralResourceView",
+      "AWSCalloutView",
+      "AWSArrowView"
+    ]
+  },
+  "AWSGroup": {
+    "kind": "class",
+    "super": "AWSElement",
+    "view": "AWSGroupView",
+    "ordering": 1200
+  },
+  "AWSGenericGroup": {
+    "kind": "class",
+    "super": "AWSElement",
+    "view": "AWSGenericGroupView",
+    "attributes": [
+      {
+        "name": "dashed",
+        "kind": "prim",
+        "type": "Boolean",
+        "visible": true,
+        "default": false
+      }
+    ],
+    "ordering": 1201
+  },
+  "AWSAvailabilityZone": {
+    "kind": "class",
+    "super": "AWSElement",
+    "view": "AWSAvailabilityZoneView",
+    "ordering": 1202
+  },
+  "AWSSecurityGroup": {
+    "kind": "class",
+    "super": "AWSElement",
+    "view": "AWSSecurityGroupView",
+    "ordering": 1203
+  },
+  "AWSService": {
+    "kind": "class",
+    "super": "AWSElement",
+    "view": "AWSServiceView",
+    "ordering": 1204
+  },
+  "AWSResource": {
+    "kind": "class",
+    "super": "AWSElement",
+    "view": "AWSResourceView",
+    "ordering": 1205
+  },
+  "AWSGeneralResource": {
+    "kind": "class",
+    "super": "AWSElement",
+    "view": "AWSGeneralResourceView",
+    "ordering": 1206
+  },
+  "AWSCallout": {
+    "kind": "class",
+    "super": "AWSElement",
+    "view": "AWSCalloutView",
+    "ordering": 1207
+  },
+  "AWSArrow": {
+    "kind": "class",
+    "super": "DirectedRelationship",
+    "view": "AWSArrowView",
+    "ordering": 1208
+  },
+  "AWSGeneralNodeView": {
+    "kind": "class",
+    "super": "NodeView",
+    "attributes": [
+      {
+        "name": "nameLabel",
+        "kind": "ref",
+        "type": "LabelView",
+        "embedded": "subViews"
+      },
+      { "name": "wordWrap", "kind": "prim", "type": "Boolean", "default": true }
+    ]
+  },
+  "AWSIconNodeView": {
+    "kind": "class",
+    "super": "NodeView",
+    "attributes": [
+      {
+        "name": "nameLabel",
+        "kind": "ref",
+        "type": "NodeLabelView",
+        "embedded": "subViews"
+      }
+    ]
+  },
+  "AWSGeneralEdgeView": {
+    "kind": "class",
+    "super": "EdgeView",
+    "attributes": [
+      {
+        "name": "nameLabel",
+        "kind": "ref",
+        "type": "EdgeLabelView",
+        "embedded": "subViews"
+      }
+    ]
+  },
+  "AWSGroupView": {
+    "kind": "class",
+    "super": "AWSGeneralNodeView"
+  },
+  "AWSGenericGroupView": {
+    "kind": "class",
+    "super": "AWSGeneralNodeView"
+  },
+  "AWSAvailabilityZoneView": {
+    "kind": "class",
+    "super": "AWSGeneralNodeView"
+  },
+  "AWSSecurityGroupView": {
+    "kind": "class",
+    "super": "AWSGeneralNodeView"
+  },
+  "AWSServiceView": {
+    "kind": "class",
+    "super": "AWSIconNodeView"
+  },
+  "AWSResourceView": {
+    "kind": "class",
+    "super": "AWSIconNodeView"
+  },
+  "AWSGeneralResourceView": {
+    "kind": "class",
+    "super": "AWSIconNodeView"
+  },
+  "AWSCalloutView": {
+    "kind": "class",
+    "super": "AWSGeneralNodeView"
+  },
+  "AWSArrowView": {
+    "kind": "class",
+    "super": "AWSGeneralEdgeView"
+  }
+}
