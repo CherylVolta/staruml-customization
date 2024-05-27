@@ -1129,10 +1129,8 @@ function handleAbout() {
 }
 
 function handleCheckForUpdates() {
-  if (app.updateManager.state === "no-update") {
-    ipcRenderer.send("command", "application:check-for-updates");
-  }
-  CheckUpdatesDialog.showDialog();
+  app.dialogs.showInfoDialog("请前往弹出的网页查看更新方法。");
+  shell.openExternal(app.config.update_help_url);
 }
 
 function handleEnterLicenseKey() {

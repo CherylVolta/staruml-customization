@@ -10,7 +10,7 @@
       "text": "Auto load working file",
       "description": "Load the latest working file automatically when app launch",
       "type": "check",
-      "default": false
+      "default": true
     },
     "general.auto-backup": {
       "text": "Auto backup",
@@ -60,7 +60,7 @@
         { "value": 28, "text": "28" },
         { "value": 32, "text": "32" }
       ],
-      "default": 13
+      "default": 20
     },
     "view.fillColor": {
       "text": "Fill Color",
@@ -90,7 +90,7 @@
         { "value": 2, "text": "Rounded Rectilinear" },
         { "value": 3, "text": "Curve" }
       ],
-      "default": 1
+      "default": 2
     },
     "view.showShadow": {
       "text": "Show Shadow",
