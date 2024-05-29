@@ -26,7 +26,7 @@
     <li>
       <a href="#使用">使用</a>
       <ol>
-        <li><a href="#使用定制版">使用定制版</li>
+        <li><a href="#使用定制化版">使用定制化版</li>
         <li><a href="#换回原版">换回原版</li>
         <li><a href="#更新方法">更新方法</li>
         <li><a href="#自行构建">自行构建</li>
@@ -97,12 +97,11 @@
 - 规则就是用来打破的~
 - 偏好设置的默认值更改
   - **resources/default/preferences/default.json**
-    - "general.working-file"：`false` -> `true`
-    - "view.fontSize"：`13` -> `20`
-    - "view.lineStyle"：`1` -> `2`
+    - "general.working-file"：`false` -> `true` 自动打开上次打开的文件
+    - "view.fontSize"：`13` -> `20` 字体大小增大，更护眼
+    - "diagramEditor.snapToGrid"：`true` -> `false` 不自动对齐到网格，强迫症狂喜
   - **extensions/essential/uml/preferences/uml.json**
-    - "uml.interface.stereotypeDisplay"：`"icon"` -> `"label"`
-    - "uml.interface.suppressOperations"：`true` -> `false`
+    - "uml.interface.suppressOperations"：`true` -> `false` 不要隐藏接口的方法
 - 字体添加 **resources/fonts/**
   - "LXGWWenKai"：添加 [**霞鹜文楷 轻便版**](https://github.com/lxgw/LxgwWenKai-Lite) 字体为 UI 字体，为中文显示提供支持
 

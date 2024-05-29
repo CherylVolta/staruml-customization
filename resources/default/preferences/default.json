@@ -90,7 +90,7 @@
         { "value": 2, "text": "Rounded Rectilinear" },
         { "value": 3, "text": "Curve" }
       ],
-      "default": 2
+      "default": 1
     },
     "view.showShadow": {
       "text": "Show Shadow",
@@ -112,7 +112,7 @@
       "text": "Snap to Grid",
       "description": "Snap to grid on diagram editor.",
       "type": "check",
-      "default": true
+      "default": false
     },
     "diagramEditor.gridSize": {
       "text": "Grid Size",
