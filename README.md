@@ -6,7 +6,7 @@
   <h4>稍稍改变了 StarUML 的使用逻辑，尽可能无误地提供中文翻译。</h4>
 
   <p>
-    <a href="stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Charlott2/staruml-customization?style=flat"></a>
+    <a href="../../stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Charlott2/staruml-customization?style=flat"></a>
     <a href="LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/Charlott2/staruml-customization"></a>
   </p>
 
