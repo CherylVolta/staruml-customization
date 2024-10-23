@@ -8,8 +8,12 @@
   <h4>稍稍改变了 StarUML 的使用逻辑，尽可能无误地提供中文翻译。</h4>
 
   <p>
-    <a href="../../stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/CherylVolta/staruml-customization?style=flat"></a>
-    <a href="LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/CherylVolta/staruml-customization"></a>
+    <a href="../../stargazers">
+      <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Lyana-nullptr/staruml-customization?style=flat">
+    </a>
+    <a href="LICENSE">
+      <img alt="GitHub License" src="https://img.shields.io/github/license/Lyana-nullptr/staruml-customization">
+    </a>
   </p>
 
   <p>
@@ -78,7 +82,7 @@
 
 - 克隆仓库到本地
   ```PowerShell
-  git clone "https://github.com/CherylVolta/staruml-customization.git" "staruml-customization"
+  git clone "https://github.com/Lyana-nullptr/staruml-customization.git" "staruml-customization"
   ```
 - 在 PowerShell 中执行构建脚本，构建出的 asar 文件将保存在 `你的桌面/staruml-custom/build` 文件夹中
 
